@@ -18,7 +18,7 @@ public interface stopDao extends ApplicationDao<stopEntity>, MasterDataDao<stopE
   List<stopEntity> getAvailablestops();
 
   @SuppressWarnings("javadoc")
-  List<stopEntity> getstopsOnLine(Long stopId);
+  List<stopEntity> getstopsOnLine(Long LineId);
 
   List<stopEntity> listAllstops();
 
