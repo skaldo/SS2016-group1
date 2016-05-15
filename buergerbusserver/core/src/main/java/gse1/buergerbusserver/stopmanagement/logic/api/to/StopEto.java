@@ -3,9 +3,9 @@ package gse1.buergerbusserver.stopmanagement.logic.api.to;
 import java.sql.Timestamp;
 
 /**
- * TODO mbrunnli This type ...
+ * TODO JAYU This type ...
  *
- * @author mbrunnli
+ * @author JAYU
  * @since 0.1
  */
 public class StopEto {
@@ -15,7 +15,9 @@ public class StopEto {
   private String routeObjectReference;
 
   private double lat;
-  
+
+  private double lon;
+
   private Timestamp timeStamp;
 
   /**
@@ -50,10 +52,24 @@ public class StopEto {
     this.timeStamp = timeStamp;
   }
 
-  public double getLat(){
-	  return this.lat;
+  public double getLat() {
+
+    return this.lat;
   }
-  public void setLat(double lat){
-	  this.lat = lat;
+
+  public void setLat(double lat) {
+
+    this.lat = lat;
   }
+
+  public double getlon() {
+
+    return this.lon;
+  }
+
+  public void setLon(double lon) {
+
+    this.lat = lon;
+  }
+
 }
