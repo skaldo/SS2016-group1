@@ -92,31 +92,18 @@ public class stopEto extends AbstractEto implements stop {
   }
 
   @Override
-  public void setTimeStamp(Timestamp timeStamp) {
+  public void setTimeStamp(Date timeStamp) {
 
     this.timeStamp = timeStamp;
 
   }
 
   @Override
-  public Timestamp getTimeStamp() {
+  public Date getTimeStamp() {
 
-    return (Timestamp) this.timeStamp;
+    return this.timeStamp;
   }
 
-  @Override
-  public void setArivingTime(Date timeStamp) {
-
-    this.timeStamp = timeStamp;
-
-  }
-
-  @Override
-  public Date getArivingTime() {
-
-    // TODO Auto-generated method stub
-    return null;
-  }
 
   @Override
   public void setStopId(Long StopId) {
