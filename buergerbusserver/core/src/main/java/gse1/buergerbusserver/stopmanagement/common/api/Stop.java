@@ -16,7 +16,7 @@ public interface Stop extends ApplicationEntity {
 
   void setLat(double lat);
   double getLat();
-  
+
   void setLon(double lon);
   double getLon();
 
