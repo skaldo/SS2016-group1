@@ -14,6 +14,8 @@ public class StopEto {
 
   private String routeObjectReference;
 
+  private double lat;
+  
   private Timestamp timeStamp;
 
   /**
@@ -48,4 +50,10 @@ public class StopEto {
     this.timeStamp = timeStamp;
   }
 
+  public double getLat(){
+	  return this.lat;
+  }
+  public void setLat(double lat){
+	  this.lat = lat;
+  }
 }

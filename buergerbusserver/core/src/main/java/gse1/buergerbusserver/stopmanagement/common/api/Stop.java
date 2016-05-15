@@ -14,6 +14,9 @@ public interface Stop extends ApplicationEntity {
 
   String getName();
 
+  void setLat(double lat);
+  double getLat();
+
   void setTimestamp(Date timeStamp);
 
   Date getTimestamp();
