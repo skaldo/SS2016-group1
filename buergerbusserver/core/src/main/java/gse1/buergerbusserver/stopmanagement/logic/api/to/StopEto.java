@@ -15,7 +15,7 @@ public class StopEto {
   private String routeObjectReference;
 
   private double lat;
-  
+  private double lon;
   private Timestamp timeStamp;
 
   /**
@@ -55,5 +55,12 @@ public class StopEto {
   }
   public void setLat(double lat){
 	  this.lat = lat;
+  }
+  
+  public double getLon(){
+	  return this.lon;
+  }
+  public void setLon(double lon){
+	  this.lon = lon;
   }
 }
