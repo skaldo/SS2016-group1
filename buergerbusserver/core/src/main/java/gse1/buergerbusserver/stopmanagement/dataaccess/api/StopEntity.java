@@ -23,6 +23,7 @@ public class StopEntity extends ApplicationPersistenceEntity implements Stop {
   private Date timestamp;
 
   private double lat;
+   private double lon;
 
   /**
    * @return name
@@ -61,8 +62,8 @@ public class StopEntity extends ApplicationPersistenceEntity implements Stop {
     this.timestamp = timestamp;
   }
 
-@Override
-public void setLat(double lat) {
+  @Override
+  public void setLat(double lat) {
 	this.lat = lat;
 }
 
@@ -71,5 +72,14 @@ public double getLat() {
 	return this.lat;
 }
 
+@Override
+public void setLon(double lon) {
+	this.lon = lon;
+}
+
+@Override
+public double getLon() {
+	return this.lon;
+}
 }
 
