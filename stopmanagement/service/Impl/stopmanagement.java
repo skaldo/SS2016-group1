@@ -18,23 +18,26 @@ import gse1.buergerbusserver.stopmanagement.logic.api.to.stopEto;
 @Consumes(MediaType.APPLICATION_JSON)
 @Path("/stopmanagement/v1")
 public interface stopmanagement {
-  @GET
-  @Path("/stops/")
-
   /**
    * @return
    */
+   @GET
+  @Path("/stops/")
   @SuppressWarnings("javadoc")
   List<stopEto> listAllstops();
 
   /**
    * @return
    */
+   @GET
+  @Path("/stops/")
   List<stopEto> getAllstops();
 
   /**
    * @param lineIdLong
    * @return
    */
+   @GET
+  @Path("/stops/")
   List<stopEto> findstopsOnLine(long lineIdLong);
 }
