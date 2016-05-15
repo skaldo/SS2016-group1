@@ -29,11 +29,15 @@ public interface stopmanagement {
   /**
    * @return
    */
+    @GET
+  @Path("/stops/")
   List<stopEto> getAllstops();
 
   /**
    *
    * @return
    */
+  @GET
+  @Path("/stops/")
   List<stopEto> findstopsOnLine(Long stopId);
 }
