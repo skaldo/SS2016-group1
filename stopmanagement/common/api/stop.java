@@ -34,13 +34,9 @@ public interface stop extends ApplicationEntity {
 
   String getLocation();
 
-  void setTimeStamp(Timestamp timeStamp);
+  void setTimeStamp(Date timeStamp);
 
-  Timestamp getTimeStamp();
-
-  void setArivingTime(Date timeStamp);
-
-  Date getArivingTime();
+   Date getTimeStamp();
 
   void setStopId(Long StopId);
 
