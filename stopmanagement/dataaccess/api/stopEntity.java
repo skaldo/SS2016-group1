@@ -14,7 +14,7 @@ import gse1.buergerbusserver.stopmanagement.common.api.stop;
  *
  */
 @Entity
-@Table(name = "stop")
+@Table(name = "STOP")
 public class stopEntity extends ApplicationPersistenceEntity implements stop {
 
   /**
@@ -37,7 +37,7 @@ public class stopEntity extends ApplicationPersistenceEntity implements stop {
   @Override
   public void setId(Long Id) {
 
-    this.id = this.id;
+    this.id =Id;
 
   }
 
@@ -96,27 +96,14 @@ public class stopEntity extends ApplicationPersistenceEntity implements stop {
   }
 
   @Override
-  public void setTimeStamp(Timestamp timeStamp) {
+  public void setTimeStamp(Date timeStamp) {
 
     this.timeStamp = timeStamp;
 
   }
 
   @Override
-  public Timestamp getTimeStamp() {
-
-    return (Timestamp) this.timeStamp;
-  }
-
-  @Override
-  public void setArivingTime(Date timeStamp) {
-
-    this.timeStamp = timeStamp;
-
-  }
-
-  @Override
-  public Date getArivingTime() {
+  public Date getTimeStamp() {
 
     return this.timeStamp;
   }
