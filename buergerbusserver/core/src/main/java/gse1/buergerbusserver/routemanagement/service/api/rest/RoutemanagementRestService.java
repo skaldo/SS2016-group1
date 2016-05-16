@@ -15,11 +15,12 @@ import gse1.buergerbusserver.routemanagement.logic.api.to.RouteEto;
  */
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-@Path("/Routemanagement/v1")
+@Path("/routemanagement/v1")
 public interface RoutemanagementRestService {
   /**
    * @return getAllRoutes
    */
+  @Get
   public List<RouteEto> getAllRoutes();
 
 }

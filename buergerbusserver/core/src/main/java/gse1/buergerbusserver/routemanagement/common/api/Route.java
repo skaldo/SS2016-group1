@@ -10,9 +10,9 @@ import gse1.buergerbusserver.general.common.api.ApplicationEntity;
  */
 public interface Route extends ApplicationEntity {
 
-  void setgpsdata(String gpsdata);
+  void setGpsData(String gpsData);
 
-  String getgpsdata();
+  String getGpsData();
 
   void setTimeStamp(Date timeStamp);
 

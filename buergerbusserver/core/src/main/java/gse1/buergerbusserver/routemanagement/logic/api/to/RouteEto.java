@@ -19,7 +19,7 @@ public class RouteEto extends AbstractEto implements Route {
    * @return gpsdata
    */
   @Override
-  public String getgpsdata() {
+  public String getGpsData() {
 
     return this.gpsdata;
   }
@@ -28,9 +28,9 @@ public class RouteEto extends AbstractEto implements Route {
    * @param gpsdata new value of {@link #getgpsdata}.
    */
   @Override
-  public void setgpsdata(String gpsdata) {
+  public void setGpsData(String gpsData) {
 
-    this.gpsdata = gpsdata;
+    this.gpsdata = gpsData;
   }
 
   /**
