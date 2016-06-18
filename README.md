@@ -97,3 +97,15 @@ Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "3.19.0-59-generic", arch: "amd64", family: "unix"
 ```
 Now check if the java referenced by `Java home` is a JDK or a JRE. If it is not a JDK, install one if necessary and set the JAVA_HOME variable of your computer accordingly.
+
+###### Symptom: ######
+Build failure in execution of `mvn clean package` due to errored tests, e.g.: `Tests in error: 
+  validateAccessControllSchema(gse1.buergerbusserver.general.common.AccessControlSchemaXmlValidationTest):`
+  
+  `Tests run: 2, Failures: 0, Errors: 1, Skipped: 0`
+
+###### Workaround: ######
+Skip the tests by:
+```
+<path>\maven\bin\mvn clean package -Dmaven.test.skip=true
+```
